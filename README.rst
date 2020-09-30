@@ -16,13 +16,14 @@ Cookiecutter PyPackage
 
 Cookiecutter_ template for a Python package.
 
-* GitHub repo: https://github.com/audreyfeldroy/cookiecutter-pypackage/
+* GitHub repo: https://github.com/nigelm/cookiecutter-pypackage/
 * Documentation: https://cookiecutter-pypackage.readthedocs.io/
 * Free software: BSD license
 
 Features
 --------
 
+* Tweaked for what I (nigelm) need
 * Testing setup with ``unittest`` and ``python setup.py test`` or ``pytest``
 * Travis-CI_: Ready for Travis Continuous Integration testing
 * Tox_ testing: Setup to easily test for Python 3.5, 3.6, 3.7, 3.8
@@ -33,20 +34,24 @@ Features
 
 .. _Cookiecutter: https://github.com/cookiecutter/cookiecutter
 
+Changes From Upstream
+---------------------
+
+* Added pre-commit config - includes black formatter
+* Changed all the quote styles to match black as well as flake8
+* Dropped python 3.5
+* Tweaked the docs config
+
+
 Build Status
 -------------
 
 Linux:
 
-.. image:: https://img.shields.io/travis/audreyfeldroy/cookiecutter-pypackage.svg
-    :target: https://travis-ci.org/audreyfeldroy/cookiecutter-pypackage
+.. image:: https://img.shields.io/travis/nigelm/cookiecutter-pypackage.svg
+    :target: https://travis-ci.org/nigelm/cookiecutter-pypackage
     :alt: Linux build status on Travis CI
 
-Windows:
-
-.. image:: https://ci.appveyor.com/api/projects/status/github/audreyr/cookiecutter-pypackage?branch=master&svg=true
-    :target: https://ci.appveyor.com/project/audreyr/cookiecutter-pypackage/branch/master
-    :alt: Windows build status on Appveyor
 
 Quickstart
 ----------
@@ -58,7 +63,7 @@ Cookiecutter 1.4.0 or higher)::
 
 Generate a Python package project::
 
-    cookiecutter https://github.com/audreyfeldroy/cookiecutter-pypackage.git
+    cookiecutter https://github.com/nigelm/cookiecutter-pypackage.git
 
 Then:
 
